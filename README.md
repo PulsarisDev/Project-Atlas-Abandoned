@@ -4,7 +4,7 @@ This project is an external server for Minecraft login validation, using *Python
 
 这是一个外置的、用于Minecraft的登录验证服务器，使用基于Python的Django框架以及*[Yggdrasil API](https://github.com/to2mbn/authlib-injector/wiki)*
 
-### Notice / 注意###
+### Notice / 注意 ###
 This project is still **under developing** today. Codes here may **not** work untill the first release.
 
 这个项目现在还**未开发完毕**。这里的代码在第一个正式版发布之前很可能**不起作用**。
