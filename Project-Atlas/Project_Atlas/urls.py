@@ -1,7 +1,6 @@
-"""
-Definition of urls for Project_Atlas.
-"""
+URIRoot = 'api/yggdrasil/'
 
+#region
 from datetime import datetime
 from django.conf.urls import url
 import django.contrib.auth.views
@@ -14,7 +13,20 @@ import app.views
 # from django.contrib import admin
 # admin.autodiscover()
 
+#endregion
+
 urlpatterns = [
+    url(r'^$', app.views.home),
+#    url(r'^register$', app.views.home),
+#    url(r'^login$', app.views.home),
+#    url(r'^changepw$', app.views.home),
+    url(r'^{}$'.format(URIRoot), app.views.home),
+    url(r'^{}authserver/authenticate$'.format(URIRoot), app.views.home),
+    url(r'^{}authserver/refresh$'.format(URIRoot), app.views.home),
+    url(r'^{}authserver/vaildate$'.format(URIRoot), app.views.home),
+    url(r'^{}authserver/invalidate$'.format(URIRoot), app.views.home),
+    url(r'^{}authserver/signout$'.format(URIRoot), app.views.home),
+    url(r'^{}sessionserver/session/minecraft/join$'.format(URIRoot), app.views.home),
     # Examples:
     url(r'^$', app.views.home, name='home'),
     url(r'^contact$', app.views.contact, name='contact'),

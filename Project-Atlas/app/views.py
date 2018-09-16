@@ -1,11 +1,12 @@
-"""
-Definition of views.
-"""
-
+#region
 from django.shortcuts import render
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
+import configparser
+#endregion
+
+print("0000 Performing system check...")
 
 def home(request):
     """Renders the home page."""
